@@ -5,7 +5,6 @@ import Introduc from '../Introduc';
 import Footer from '../Footer';
 import Card from '../Card';
 import Languages from '../Languages';
-import VideoSection from '../VideoSection';
 
 
 function Home() {
@@ -13,7 +12,6 @@ function Home() {
     <>
       <ShowCase />
       <Introduc />
-      <VideoSection />
       <Card />
       <Languages />
       <Footer />

@@ -22,12 +22,11 @@ function ShowCase() {
     return (
     <>
       <section className="showcase">
+        <video src='/videos/video-2.mov' autoPlay loop muted />
         <div className="container grid">
             <div className="showcase-text">
                 <h1>Web Development</h1>
-                <p>Every Web Developer must have a basic understanding of HTML, CSS, and JavaScri-pt. Responsive Web Design is used in all types of modern web development.
-                   (JavaScript 5) is supported in all modern browsers.Take a good look at it, especially the new array functions.</p>
-                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                
             </div>
             <div className="showcase-form card">
                 <h2>Request a Quote</h2>
