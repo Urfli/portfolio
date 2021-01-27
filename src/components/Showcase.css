@@ -33,13 +33,13 @@ video {
     text-align: center;
     margin-top: -300px;
     position: relative;
-    left: 20px;
+    left: 200px;
 }
 
 .showcase-form {
     position: relative;
     top: 50px;
-    left: 20px;
+    left: 300px;
     height: 350px;
     width: 400px;
     padding: 40px;
@@ -75,6 +75,20 @@ video {
 }
 
 /* Tablets and under*/
+
+@media(max-width: 1656px) {
+    .showcase-form {
+        position: relative;
+        top: 150px;
+        left: -350px;
+        height: 350px;
+        width: 400px;
+        padding: 40px;
+        z-index: 100;
+        justify-self: flex-end;
+    }
+}
+
 @media(max-width: 768px) {
     .grid,
     .showcase .grid,
@@ -92,16 +106,25 @@ video {
     .showcase-text {
         text-align: center;
         margin-top: 40px;
-    }
-
-    .showcase-form {
-        justify-self: center;
-        margin: auto;
+        position: relative;
+        top: 110px;
+        right: -40px;
     }
 
     .cli .grid > *:first-child {
         grid-column: 1 ;
         grid-row: 1;
+    }
+
+    .showcase-form {
+        position: relative;
+        top: 150px;
+        left: -150px;
+        height: 350px;
+        width: 400px;
+        padding: 40px;
+        z-index: 100;
+        justify-self: flex-end;
     }
 }
 
@@ -118,6 +141,23 @@ video {
     .navbar ul {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .showcase-form {
+        position: relative;
+        top: 180px;
+        left: 0px;
+        height: 350px;
+        width: 400px;
+        padding: 40px;
+        z-index: 100;
+        justify-self: flex-end;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: -300px;
+        position: relative;
     }
 }
 
