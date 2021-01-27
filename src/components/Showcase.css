@@ -9,9 +9,10 @@ video {
 /* Showcase */
 
 .showcase {
-    height: 600px;
+    height: 800px;
     color: #fff;
     position: relative;
+    top: -120px;
 }
 
 .showcase h1 {
@@ -32,13 +33,13 @@ video {
     text-align: center;
     margin-top: -300px;
     position: relative;
-    left: 200px;
+    left: 20px;
 }
 
 .showcase-form {
     position: relative;
     top: 50px;
-    left: 300px;
+    left: 20px;
     height: 350px;
     width: 400px;
     padding: 40px;
