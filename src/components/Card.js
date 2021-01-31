@@ -12,13 +12,13 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-1.jpg'
-              text='Ide jön vmi általános szöveg, vmi ami jól mutat majd itt.'
+              text='Image description, the beauties of programming.'
               label='Title-1'
               path='/services'
             />
             <CardItem
               src='images/img-2.jpg'
-              text='Ide jön vmi általános szöveg, vmi ami jól mutat majd itt.'
+              text='Image description, the beauties of programming.'
               label='Title-2'
               path='/services'
             />
@@ -26,19 +26,19 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Ide jön vmi általános szöveg, vmi ami jól mutat majd itt.'
+              text='Image description, the beauties of programming.'
               label='Title-3'
               path='/services'
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Ide jön vmi általános szöveg, vmi ami jól mutat majd itt.'
+              text='Image description, the beauties of programming.'
               label='Title-4'
               path='/products'
             />
             <CardItem
               src='images/img-5.jpg'
-              text='Ide jön vmi általános szöveg, vmi ami jól mutat majd itt.'
+              text='Image description, the beauties of programming.'
               label='Title-5'
               path='/sign-up'
             />
