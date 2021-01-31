@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.75d6ac52.chunk.css",
+    "main.js": "/portfolio/static/js/main.0285b878.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0285b878.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.a4855db3.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a4855db3.js.map",
+    "static/js/2.b396d37f.chunk.js": "/portfolio/static/js/2.b396d37f.chunk.js",
+    "static/js/2.b396d37f.chunk.js.map": "/portfolio/static/js/2.b396d37f.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.ee0d0cef4758b6653a4f356c483222fb.js": "/portfolio/precache-manifest.ee0d0cef4758b6653a4f356c483222fb.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.75d6ac52.chunk.css.map": "/portfolio/static/css/main.75d6ac52.chunk.css.map",
+    "static/js/2.b396d37f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b396d37f.chunk.js.LICENSE.txt",
+    "static/media/csokesz.png": "/portfolio/static/media/csokesz.b3f72f41.png",
+    "static/media/norfli.png": "/portfolio/static/media/norfli.ed79c848.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4855db3.js",
+    "static/js/2.b396d37f.chunk.js",
+    "static/css/main.75d6ac52.chunk.css",
+    "static/js/main.0285b878.chunk.js"
+  ]
+}
