@@ -1,0 +1,22 @@
+.progressBarStyle{
+    .progress-bar{
+        display: flex;
+        align-items: center;
+        p{
+            padding-right: 1.1rem;
+        }
+        .progress{
+            position: relative;
+            width: 100%;
+            height: 1rem;
+            background-color: var(--border-color);
+            span{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                background-color: var(--primary-color)
+            }
+        }
+    }
+}

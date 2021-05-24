@@ -1,0 +1,65 @@
+.imageSection {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .imageSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imageSection .left-content {
+    margin-bottom: 2rem;
+  }
+}
+
+.imageSection .left-content {
+  width: 100%;
+}
+
+.imageSection .left-content img {
+  width: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imageSection .right-content {
+  width: 100%;
+}
+
+.imageSection .right-content h4 {
+  font-size: 2rem;
+  color: var(--white-color);
+}
+
+.imageSection .right-content h4 span {
+  font-size: 2rem;
+}
+
+.imageSection .right-content .paragraph {
+  padding: 1rem 0;
+}
+
+.imageSection .right-content .about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.4rem;
+}
+
+.imageSection .right-content .about-info .info-title {
+  padding-right: 3rem;
+}
+
+.imageSection .right-content .about-info .info-title p {
+  font-weight: 600;
+}
+
+.imageSection .right-content .about-info .info-title p, .imageSection .right-content .about-info .info p {
+  padding: .3rem 0;
+}
+/*# sourceMappingURL=ImageSectiob.css.map */

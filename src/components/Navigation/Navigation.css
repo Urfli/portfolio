@@ -1,0 +1,91 @@
+.navigationBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navigationBar .avatar {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navigationBar .avatar img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.navigationBar .nav-items {
+  width: 100%;
+  text-align: center;
+}
+
+.navigationBar .nav-items .active-class {
+  background-color: var(--primary-color-light);
+  color: white;
+}
+
+.navigationBar .nav-items li {
+  display: block;
+}
+
+.navigationBar .nav-items li a {
+  display: block;
+  padding: .45rem 0;
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navigationBar .nav-items li a:hover {
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.navigationBar .nav-items li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 50%;
+  background-color: var(--primary-color);
+  -webkit-transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
+  transition: All 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
+  opacity: 0.21;
+  z-index: -1;
+}
+
+.navigationBar .nav-items li a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.navigationBar footer {
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+.navigationBar footer p {
+  padding: 1.3rem 0;
+  font-size: 1.1rem;
+  display: block;
+  text-align: center;
+}
+/*# sourceMappingURL=Navigation.css.map */

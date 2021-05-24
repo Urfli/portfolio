@@ -1,45 +1,47 @@
-// import React from 'react';
-// import './Button.css';
-// import { Link } from 'react-router-dom';
-
-// export function Button() {
-//   return (
-//     <Link to='sign-up'>
-//       <button className='btn'>Sign Up</button>
-//     </Link>
-//   );
-// }
-
 import React from 'react';
-import './Button.css';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test', 'btn--secondary'];
+function Button({filter, button}) {
+    return (
+        <ButtonsStyled>
+            {
+                button.map((but, i) =>{
+                    return <ButtonStyled key={i} onClick={() => filter(but)}>
+                        {but}
+                    </ButtonStyled>
+                })
+            }
+        </ButtonsStyled>
+    )
+}
 
-const SIZES = ['btn--medium', 'btn--large'];
+const ButtonStyled = styled.button`
+    outline: none;
+    border: none;
+    background-color: var(--background-light-color-2);
+    padding: .4rem 2rem;
+    font-size: inherit;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    margin-bottom: .6rem;
+    &:active ,&:focus{
+        background-color: var(--primary-color);
+    }
+    &:hover{
+        background-color: var(--primary-color);
+    }
 
-export const Button = ({
-  children,
-  type,
-  onClick,
-  buttonStyle,
-  buttonSize
-}) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
-    ? buttonStyle
-    : STYLES[0];
-
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
-  return (
-    <Link to='/sign-up' className='btn-mobile'>
-      <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-        onClick={onClick}
-        type={type}
-      >
-        {children}
-      </button>
-    </Link>
-  );
-};
+    &:not(:last-child){
+        margin-right: .6rem;
+    }
+`;
+const ButtonsStyled = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 2.4rem auto;
+`;
+export default Button;
