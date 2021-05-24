@@ -23,6 +23,19 @@ function Navigation() {
                     <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>
             </ul>
+            <iconfooter>
+                  <div class="color"></div>
+                  <div class="color"></div>
+                  <div class="color"></div>
+                    <ul>
+                      <li><a href="/#"><i class='fab fa-facebook-f' />
+                      </a></li>
+                      <li><a href="/#"><i class='fab fa-instagram' />
+                      </a></li>
+                      <li><a href="/#"><i class='fab fa-twitter' />
+                      </a></li>
+                    </ul>
+            </iconfooter>
             <footer className="footer">
                 <p>@CopyRight <b>Urfloé</b></p>
             </footer>
