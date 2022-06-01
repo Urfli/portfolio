@@ -1,0 +1,17 @@
+a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
