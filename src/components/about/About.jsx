@@ -1,9 +1,8 @@
 import React from "react";
 import "./About.css";
-import ME from "../../assets/me-about.jpg";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import AboutMeImg from "./components/AboutMeImg/AboutMeImg";
+import AboutCard from "./components/AboutCard/AboutCard";
+import CARD_DESCRIPTION from "./components/CardsDescription/data";
 
 const About = () => {
   return (
@@ -12,28 +11,19 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About_Image"></img>
-          </div>
-        </div>
+        <AboutMeImg />
+
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>1+ Years Working</small>
-            </article>
-            <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>Lorem ipsum dolor sit..</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>10+ Completed</small>
-            </article>
+            {CARD_DESCRIPTION.map((e) => {
+              return (
+                <AboutCard
+                  icon={e.icon}
+                  title={<h5>{e.title}</h5>}
+                  description={<small>{e.body}</small>}
+                />
+              );
+            })}
           </div>
 
           <p>
